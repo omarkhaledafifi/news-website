@@ -89,7 +89,7 @@ namespace NewsWebsite.Services.Services
                 throw new Exception(string.Join(", ", roleResult.Errors.Select(e => e.Description)));
             }
 
-            return Task.FromResult(new UserResponse(request.Email, user.DisplayName, CreateTokenAsync(user).Result));
+            return Task.FromResult(new UserResponse(request.Email, user.DisplayName, null));
         }
 
         public async Task<IEnumerable<UserManagementDto>> GetAllUsersAsync()

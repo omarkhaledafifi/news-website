@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace NewsWebsite.BBL.DTOs
 {
-    public record UserResponse(string Email, string DisplayName, string Token);
+    public record UserResponse(string Email, string DisplayName, string? Token);
 }
